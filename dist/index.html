@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#15251e"><meta name="description" content="Quiskett: planes de comidas para tu entrenamiento con los sabores de los países hispanohablantes. Personaliza tu semana y tu lista de compra.">
+<title>Quiskett · Come a tu manera. Entrena a otro nivel.</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<div class="app-layout">
+<aside class="sidebar">
+<a class="brand" href="#/crear" aria-label="Quiskett, inicio"><span class="brand-mark">q</span>quiskett<span>.</span></a>
+<span class="brand-subtitle">TU COMIDA. TU ENTRENO.</span>
+<nav aria-label="Navegación principal">
+<a href="#/crear" data-route="crear" aria-label="Planificador"><span data-icon="sliders"></span>Planificador</a>
+<a href="#/plan" data-route="plan" aria-label="Mi plan"><span data-icon="calendar"></span>Mi plan<span class="nav-count" id="nav-days" hidden></span></a>
+<a href="#/compra" data-route="compra" aria-label="Lista de compra"><span data-icon="bag"></span>Lista de compra</a>
+<a href="#/ayuda" data-route="ayuda" aria-label="Cómo funciona"><span data-icon="help"></span>Cómo funciona</a>
+</nav>
+<div class="sidebar-bottom"><div class="sidebar-promo"><span class="small-caps">SIN SUSCRIPCIONES</span><strong>Un plan.<br>Mucho potencial.</strong><p>Comidas para tu semana<br>por <b>0,50 €</b>.</p><span class="promo-line"></span></div><span class="version-label">QUISKETT GYM · VERSIÓN DEMO</span></div>
+</aside>
+<div class="main-column">
+<header class="topbar"><div class="breadcrumb"><span>Tu espacio</span><span>/</span><strong id="page-label">Planificador</strong></div><div class="topbar-right"><span class="demo-badge" id="mode-badge">Modo demo</span><span class="price-label">0,50 € <span>/ plan</span></span><button class="help-button" type="button" id="open-help" aria-label="Ayuda"><span data-icon="help"></span></button></div></header>
+<main id="main" tabindex="-1">
+<section class="route-view" id="view-crear" aria-labelledby="builder-title">
+<div class="page-heading"><div><p class="eyebrow">NUTRICIÓN CON TU ACENTO</p><h1 id="builder-title">Come a tu manera.<br>Entrena a <span>otro nivel.</span></h1><p>Un plan para tu objetivo, con los sabores de casa.</p></div><div class="country-orbit"><span data-icon="globe"></span><strong id="country-count">21</strong><span>países y territorios.<br>Tu mismo objetivo.</span></div></div>
+<ol class="stepper" aria-label="Pasos para crear tu plan"><li class="active"><span>1</span>Personaliza</li><li><span>2</span>Tu plan</li><li><span>3</span>Confirmación</li></ol>
+<div class="builder-grid">
+<form id="plan-form" class="config-panel">
+<fieldset class="goal-field"><legend><span class="section-number">01</span>¿Qué quieres conseguir?</legend><div class="goal-options">
+<label class="goal-card"><input type="radio" name="goal" value="gain" checked><span><i data-icon="dumbbell"></i><b>Ganar músculo</b><small>Más combustible</small></span></label>
+<label class="goal-card"><input type="radio" name="goal" value="cut"><span><i data-icon="flame"></i><b>Definir</b><small>Porciones moderadas</small></span></label>
+<label class="goal-card"><input type="radio" name="goal" value="maintain"><span><i data-icon="balance"></i><b>Mantener</b><small>Tu equilibrio</small></span></label>
+</div></fieldset>
+<div class="country-field"><label class="section-label" id="country-label"><span class="section-number">02</span>El sabor de tu país</label><button type="button" class="country-button" id="open-countries" aria-labelledby="country-label selected-country" aria-haspopup="dialog"><span class="flag-code" id="selected-code">RD</span><span><b id="selected-country">República Dominicana</b><small id="selected-region">Caribe</small></span><span data-icon="chevron"></span></button></div>
+<div class="form-two-columns"><div><label for="style">Alimentación</label><select id="style"><option value="all">Variada</option><option value="vegetarian">Vegetariana</option></select></div><fieldset><legend class="plain-label">Duración</legend><div class="segmented"><label><input type="radio" name="days" value="3"><span>3 días</span></label><label><input type="radio" name="days" value="7" checked><span>7 días</span></label></div></fieldset></div>
+<div class="training-field"><div><label for="training-days">Días de gimnasio por semana</label><output id="training-output" for="training-days">4 días</output></div><input id="training-days" type="range" min="1" max="6" value="4"><div class="range-labels"><span>1 día</span><span>6 días</span></div></div>
+<details class="advanced"><summary>Personaliza un poco más<span data-icon="plus"></span></summary><div class="advanced-fields"><div><label for="weight">Tu peso, si quieres <span>(kg)</span></label><input id="weight" type="number" min="45" max="160" step="1" placeholder="Ej. 75"><p>Solo para una referencia general de proteína.</p></div><div><label for="portion">Tamaño de las porciones</label><select id="portion"><option value="auto">Según mi objetivo</option><option value="small">Moderadas</option><option value="standard">Estándar</option><option value="large">Generosas</option></select></div></div></details>
+<p class="preference-note" id="vegetarian-note" hidden>La opción vegetariana incluye huevos y lácteos.</p>
+<label class="adult-check"><input type="checkbox" id="adult"><span>Soy mayor de 18 años y busco ideas generales de comidas.</span></label>
+<p id="form-error" class="form-error" role="alert" hidden></p>
+<button class="primary-button" type="submit"><span data-icon="sparkles"></span>Crear mi plan<span class="button-chip">0,50 €</span></button>
+<p class="quiet-note">Puedes probarlo gratis. La demo no realiza ningún cobro.</p>
+</form>
+<div class="live-preview">
+<div class="preview-heading"><div><span class="live-label">VISTA PREVIA</span><h2>Así sabe tu objetivo.</h2></div><span class="goal-pill" id="preview-goal">Ganar músculo</span></div>
+<div class="food-card"><img src="assets/dominican-lunch.png" alt="Plato de inspiración dominicana con arroz, habichuelas, pollo y aguacate" width="1254" height="1254" fetchpriority="high"><span class="food-tag">INSPIRACIÓN DOMINICANA</span><div class="food-caption"><span>COMIDA DE CASA. ACTITUD GYM.</span><strong>El cambio empieza<br>en tu plato.</strong></div><span class="food-symbol" data-icon="dumbbell"></span></div>
+<div class="nutrition-card"><div class="nutrition-top"><span>TU PRIMER DÍA, APROX.</span><span class="portion-pill" id="portion-label">Porciones generosas</span></div><div class="nutrition-content"><div class="macro-ring" id="macro-ring"><div><strong id="preview-kcal">—</strong><span>kcal estimadas</span></div></div><div class="macro-legend"><div><i class="protein-dot"></i><span>Proteína</span><strong id="preview-protein">—</strong></div><div><i class="carbs-dot"></i><span>Carbohidratos</span><strong id="preview-carbs">—</strong></div><div><i class="fat-dot"></i><span>Grasas</span><strong id="preview-fat">—</strong></div></div></div><p class="protein-reference" id="protein-reference" hidden></p></div>
+<div class="preview-meals" id="preview-meals"></div><p class="estimate-note">Cantidades y nutrientes estimados. Cambiar porciones no garantiza un déficit o un superávit calórico.</p>
+</div></div>
+<div class="benefit-strip"><span><i data-icon="globe"></i>Sabores de tu país</span><span><i data-icon="refresh"></i>Platos que puedes cambiar</span><span><i data-icon="bag"></i>Compra sin dar vueltas</span><span><i data-icon="check"></i>Un pago, sin suscripción</span></div>
+</section>
+<section class="route-view" id="view-plan" aria-labelledby="plan-title" hidden>
+<div class="page-heading compact"><div><p class="eyebrow" id="plan-eyebrow">TU SEMANA, ORGANIZADA</p><h1 id="plan-title">Un plan que <span>va contigo.</span></h1><p id="plan-summary"></p></div><button type="button" class="outline-button" data-navigate="crear"><span data-icon="sliders"></span>Editar preferencias</button></div>
+<div class="empty-state" id="plan-empty"><span data-icon="calendar"></span><h2>Aquí empieza tu próxima semana.</h2><p>Elige tu objetivo y tu país para crear tu primer plan.</p><button class="primary-button" data-navigate="crear">Crear mi plan</button></div>
+<div id="plan-content" hidden><div class="plan-toolbar"><div class="day-tabs" id="day-tabs" role="tablist" aria-label="Día del plan"></div><button class="text-button" type="button" id="regenerate-plan"><span data-icon="refresh"></span>Otra semana</button></div><div class="day-heading"><div><h2 id="day-title">Día 1</h2><span class="day-type" id="day-type">Día de entrenamiento</span></div><div class="day-totals" id="day-totals"></div></div><div class="meal-grid" id="plan-meals" role="tabpanel"></div><div class="plan-actions"><button type="button" class="outline-button" data-navigate="compra"><span data-icon="bag"></span>Ver lista de compra</button><button type="button" class="primary-button" data-navigate="pago">Confirmar mi plan <span class="button-chip">0,50 €</span></button></div><p class="estimate-note">Plan orientativo para adultos sanos que entrenan. No sustituye una evaluación nutricional individual.</p></div>
+</section>
+<section class="route-view" id="view-compra" aria-labelledby="shopping-title" hidden>
+<div class="page-heading compact"><div><p class="eyebrow">MENOS IMPROVISACIÓN</p><h1 id="shopping-title">Todo para tu <span>semana.</span></h1><p>Ingredientes agrupados. Marca lo que ya tienes.</p></div><button type="button" class="outline-button" id="download-shopping"><span data-icon="download"></span>Descargar lista</button></div>
+<div id="shopping-empty" class="empty-state"><span data-icon="bag"></span><h2>Primero, tu plan.</h2><p>La lista de compra aparecerá cuando crees tu menú.</p><button class="primary-button" data-navigate="crear">Crear mi plan</button></div>
+<div id="shopping-content" hidden><div class="shopping-progress"><div><strong id="shopping-counter">0 ingredientes listos</strong><button type="button" class="text-button" id="reset-shopping">Desmarcar todo</button></div><progress id="shopping-progress" value="0" max="100" aria-label="Ingredientes conseguidos"></progress></div>
+<section class="price-panel" aria-labelledby="prices-title">
+<div class="price-heading"><div><p class="eyebrow">DEL MENÚ A LA CESTA</p><h2 id="prices-title">El sabor de casa.<br><span>Con los pies en el precio.</span></h2></div><span class="area-pill"><span data-icon="globe"></span>Barcelona · 08001</span></div>
+<p class="price-intro">Precios reales observados en fichas públicas. La zona es orientativa: confirma precio, peso y disponibilidad al abrir la tienda.</p>
+<div class="price-options"><label class="price-owned"><input type="checkbox" id="prices-only-missing" checked>Solo lo que me falta</label><span id="prices-updated" class="price-updated"></span></div>
+<label class="price-owned protein-price-choice"><input type="checkbox" id="prices-protein-alternative">Usar YoPRO natural como alternativa al yogur en el presupuesto</label><p class="protein-choice-note">Opcional. El precio usará este lácteo alto en proteína; el menú mantiene sus nutrientes estimados. Revisa la etiqueta.</p>
+<p id="prices-message" class="price-message" role="status">Cargando precios…</p><button type="button" id="prices-retry" class="outline-button" hidden>Reintentar carga</button>
+<div id="store-cards" class="store-cards" role="group" aria-label="Elegir supermercado"></div>
+<div id="price-details" hidden><div class="basket-summary"><div><span id="basket-store" class="eyebrow"></span><strong id="basket-total"></strong><span id="basket-coverage"></span></div><div class="basket-breakdown"><p id="basket-used"></p><p id="basket-pending"></p><button type="button" id="download-budget" class="outline-button"><span data-icon="download"></span>Descargar presupuesto</button></div></div>
+<p class="price-caveat">Envases completos y productos al peso, redondeados de forma conservadora a compras mínimas. El peso final puede variar. No incluye entrega ni descuentos con condiciones. Los alimentos se pagan aparte del plan de 0,50 €.</p>
+<div id="common-prices" class="common-prices" hidden></div>
+<div id="priced-products" class="priced-products"></div>
+<details class="price-missing" id="unpriced-details"><summary id="unpriced-summary"></summary><ul id="unpriced-list"></ul></details>
+<details class="yield-settings"><summary>Ajustar el rendimiento de cocción</summary><p>Las conversiones son orientativas y dependen de cómo cocines. Estos cambios solo afectan a la compra.</p><div class="yield-fields"><label>Arroz: gramos cocidos por gramo seco<input id="rice-yield" type="number" min="2" max="4" step="0.1" value="3" inputmode="decimal"></label><label>Pollo: peso cocinado / peso crudo<input id="chicken-yield" type="number" min="0.5" max="1" step="0.05" value="0.75" inputmode="decimal"></label></div><button type="button" id="apply-yields" class="outline-button">Actualizar cantidades</button><p class="form-error" id="yield-error" role="alert" hidden></p></details>
+</div></section>
+<div class="shopping-grid" id="shopping-groups"></div><p class="estimate-note">Pesos de receta aproximados. El presupuesto convierte algunas cantidades a su formato de compra; los ingredientes pendientes conservan su peso de receta.</p></div>
+</section>
+<section class="route-view" id="view-pago" aria-labelledby="checkout-title" hidden>
+<div class="page-heading compact"><div><p class="eyebrow">EL ÚLTIMO PASO</p><h1 id="checkout-title">Simple. Como <span>debe ser.</span></h1><p>Un plan. Un pago. Sin suscripciones.</p></div></div>
+<div class="checkout-grid"><div class="checkout-card"><span class="checkout-mark" data-icon="check"></span><h2>Tu plan Quiskett</h2><p id="checkout-description">Crea un plan para continuar.</p><ul class="checkout-includes"><li><span data-icon="check"></span>Menú con cantidades y nutrientes aproximados</li><li><span data-icon="check"></span>Recetas y cambios de platos</li><li><span data-icon="check"></span>Lista de compra y descarga</li></ul><div class="order-row"><span>Un plan completo</span><strong>0,50 €</strong></div><div class="order-row order-total"><span>Total</span><strong>0,50 €</strong></div><p class="quiet-note">Precio total mostrado. Sin cargos recurrentes.</p></div>
+<div class="payment-panel"><span class="demo-badge" id="checkout-mode">DEMOSTRACIÓN</span><h2 id="payment-heading">Prueba el recorrido completo.</h2><p id="payment-description">Esta versión no pide tarjeta ni realiza cobros. Podrás confirmar y descargar tu plan de prueba.</p><div class="payment-method"><span data-icon="shield"></span><div><b>Pago alojado en Stripe</b><span id="payment-method-note">Disponible al conectar la pasarela</span></div></div><label class="payment-check"><input id="checkout-consent" type="checkbox"><span id="checkout-consent-text">Entiendo que estoy probando una demostración gratuita.</span></label><p class="form-error" id="checkout-error" role="alert" hidden></p><button type="button" id="checkout-submit" class="primary-button" disabled>Confirmar demo gratis</button><button type="button" class="text-button" data-navigate="plan">Volver a mi plan</button><p class="payment-small" id="payment-small">Nunca introduzcas datos de tarjeta en esta demo.</p></div></div>
+</section>
+<section class="route-view" id="view-listo" aria-labelledby="ready-title" hidden>
+<div class="ready-card"><span class="ready-icon" data-icon="check"></span><p class="eyebrow" id="ready-eyebrow">PLAN DE PRUEBA CONFIRMADO</p><h1 id="ready-title">Ahora, <span>a por ello.</span></h1><p id="ready-description">Tu menú y tu lista de compra están listos. No se ha realizado ningún cobro.</p><div class="ready-summary" id="ready-summary"></div><div class="ready-actions"><button class="primary-button" id="download-plan"><span data-icon="download"></span>Descargar mi plan</button><button class="outline-button" id="print-plan">Imprimir / PDF</button></div><button class="text-button" data-navigate="plan">Volver a las comidas</button><p class="quiet-note">Tus preferencias permanecen en esta sesión del navegador.</p></div>
+</section>
+<section class="route-view" id="view-ayuda" aria-labelledby="help-title" hidden>
+<div class="page-heading compact"><div><p class="eyebrow">SIN COMPLICACIONES</p><h1 id="help-title">Tu plan, <span>paso a paso.</span></h1><p>Comidas de casa, pensadas para acompañar tu entrenamiento.</p></div></div>
+<div class="help-steps"><article><span>01</span><h2>Elige cómo entrenas</h2><p>Selecciona objetivo, país, alimentación y días. Ajusta las porciones; tus necesidades energéticas no se calculan automáticamente.</p></article><article><span>02</span><h2>Haz el menú tuyo</h2><p>Explora los días, cambia platos y consulta cantidades y recetas. La lista de compra se actualiza con tus cambios.</p></article><article><span>03</span><h2>Confirma y llévatelo</h2><p>Prueba la confirmación gratuita y descarga tu plan. El precio previsto es 0,50 € por plan al activar el pago real.</p></article></div>
+<div class="faq-panel"><h2>Lo que conviene saber</h2>
+<details><summary>¿Qué países están incluidos?</summary><p id="all-country-names"></p></details>
+<details><summary>¿Son dietas clínicas?</summary><p>Son ideas para adultos sanos que entrenan. No calculan tus necesidades individuales. Si tienes una condición médica, embarazo, lactancia o antecedentes de trastornos alimentarios, consulta a un profesional antes de adaptar tu alimentación.</p></details>
+<details><summary>¿Cómo se calculan los nutrientes?</summary><p>Sumamos cantidades de ingredientes con tablas de composición y equivalencias aproximadas. Las marcas y cocciones cambian los valores. Consulta las <a href="NUTRITION.md" target="_blank" rel="noopener">fuentes y criterios de cálculo</a>.</p></details>
+<details><summary>¿La opción vegetariana incluye huevos y lácteos?</summary><p>Sí. Comprueba ingredientes y etiquetas si tienes alergias. La web no garantiza ausencia de alérgenos o contaminación cruzada.</p></details>
+<details><summary>¿Dónde están mis datos?</summary><p>Guardamos tu menú y las casillas de compra en esta sesión del navegador para que puedas recargar. El peso no se guarda ni se envía. Al activar el pago, el servidor guarda el pedido y Stripe recibe el importe y un identificador; los datos de tarjeta se introducen en Stripe.</p></details>
+<details><summary>¿Tengo que pagar ahora?</summary><p id="payment-faq">Esta versión es una demo gratuita. No recoge tarjetas ni cobra. El recorrido de pago está preparado para activar Stripe más adelante.</p></details>
+<details><summary>¿De dónde salen los precios?</summary><p>Del catálogo de fichas oficiales de DIA y Caprabo. Cada producto enlaza a su fuente y fecha de consulta. Los precios con más de 48 horas o sin disponibilidad se excluyen. Mercadona, Consum y Carrefour aparecen como fuentes pendientes. Barcelona 08001 es la referencia del piloto; no garantiza reparto ni precios de tu tienda.</p></details>
+</div></section>
+<footer><span>quiskett<span class="lime-text">.</span> · Tu cultura también entrena.</span><span>© 2026 Quiskett</span></footer>
+</main></div></div>
+<dialog id="country-dialog" aria-labelledby="country-dialog-title"><div class="dialog-header"><div><p class="eyebrow">EL SABOR DE CASA</p><h2 id="country-dialog-title">¿De dónde viene tu sabor?</h2></div><button type="button" class="icon-button" id="close-countries" aria-label="Cerrar selector de países"><span data-icon="close"></span></button></div><div class="country-search"><span data-icon="search"></span><input id="country-search" type="search" aria-label="Buscar país" placeholder="Busca tu país…" autocomplete="off"></div><div class="region-filters" id="region-filters" aria-label="Filtrar por región"></div><div class="country-list" id="country-list"></div><p class="empty-search" id="empty-search" hidden>No encontramos ese país. Prueba con otro nombre.</p><div class="dialog-country-note"><span data-icon="globe"></span><span>Sabores locales, con adaptaciones para tu entrenamiento.</span></div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div><div id="print-document" hidden></div>
+<script type="module" src="app.js"></script>
+</body></html>

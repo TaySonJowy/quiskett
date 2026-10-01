@@ -1,0 +1,729 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-01T09:44:27.957Z",
+  "referenceArea": {
+    "city": "Barcelona",
+    "postalCode": "08001",
+    "confirmed": false
+  },
+  "maxAgeHours": 48,
+  "stores": [
+    {
+      "id": "dia",
+      "name": "DIA",
+      "url": "https://www.dia.es",
+      "mode": "html",
+      "status": "blocked",
+      "detail": "Tres fichas públicas verificadas durante la investigación. El último intento del colector recibió HTTP 403 en robots.txt; actualización detenida. Zona sin confirmar.",
+      "lastAttemptAt": "2026-10-01T09:26:02.562Z",
+      "lastSuccessfulAt": "2026-10-01T09:23:05.635Z",
+      "successful": 0,
+      "attempted": 0,
+      "errors": []
+    },
+    {
+      "id": "caprabo",
+      "name": "Caprabo",
+      "url": "https://www.capraboacasa.com",
+      "mode": "html",
+      "status": "ok",
+      "detail": "Fichas públicas; tienda observada 8284, ubicación sin confirmar.",
+      "lastAttemptAt": "2026-10-01T09:37:43.652Z",
+      "lastSuccessfulAt": "2026-10-01T09:38:04.457Z",
+      "successful": 21,
+      "attempted": 21,
+      "errors": []
+    },
+    {
+      "id": "mercadona",
+      "name": "Mercadona",
+      "url": "https://tienda.mercadona.es",
+      "mode": "disabled",
+      "status": "disabled",
+      "detail": "Pendiente de una fuente autorizada. La página pública no expone precios y robots.txt restringe /api.",
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "successful": 0,
+      "attempted": 0,
+      "errors": []
+    },
+    {
+      "id": "consum",
+      "name": "Consum",
+      "url": "https://tienda.consum.es",
+      "mode": "disabled",
+      "status": "disabled",
+      "detail": "Sin actualización automática. Acceso por navegador rechazado; la ficha HTML no ofrece un precio extraíble.",
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "successful": 0,
+      "attempted": 0,
+      "errors": []
+    },
+    {
+      "id": "carrefour",
+      "name": "Carrefour",
+      "url": "https://www.carrefour.es",
+      "mode": "disabled",
+      "status": "disabled",
+      "detail": "Acceso público devolvió HTTP 403. Pendiente de una fuente autorizada.",
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "successful": 0,
+      "attempted": 0,
+      "errors": []
+    }
+  ],
+  "products": [
+    {
+      "storeId": "dia",
+      "id": "21415",
+      "key": "rice",
+      "name": "Arroz redondo SOS 1 Kg",
+      "url": "https://www.dia.es/arroz-pastas-y-legumbres/arroz/p/21415",
+      "priceCents": 188,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 1000,
+        "kind": "fixed"
+      },
+      "unitPriceCents": 188,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:14:44.220Z",
+      "context": {
+        "postalCode": null,
+        "storeId": null,
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_jsonld",
+        "sha256": "0de3fb080efdb6cfea9def7cb64c02754f5ad66613b0761fda1b1dcb6761d85f"
+      }
+    },
+    {
+      "storeId": "dia",
+      "id": "261354",
+      "key": "chicken",
+      "name": "Solomillos de pollo Selección de Dia 550 g aprox.",
+      "url": "https://www.dia.es/carnes/pollo/p/261354",
+      "priceCents": 478,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 550,
+        "kind": "approximate"
+      },
+      "unitPriceCents": 869,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:23:04.735Z",
+      "context": {
+        "postalCode": null,
+        "storeId": null,
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_jsonld",
+        "sha256": "4e263488d938c0324264117fce372a14e01ec3eebb33abd26804f6c349d3a5c4"
+      }
+    },
+    {
+      "storeId": "dia",
+      "id": "105429",
+      "key": "oats",
+      "name": "Copos de avena Gran Dia 500 g",
+      "url": "https://www.dia.es/galletas-cereales-y-mermeladas/cereales-integrales-y-muesli/p/105429",
+      "priceCents": 82,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 500,
+        "kind": "fixed"
+      },
+      "unitPriceCents": 164,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:23:05.635Z",
+      "context": {
+        "postalCode": null,
+        "storeId": null,
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_jsonld",
+        "sha256": "3e5bf95ef812d3fd88804bc5b3b008d96208ddbd80a23b0e3f87e4c8e1499a0d"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "19230572",
+      "key": "chicken",
+      "name": "Pechugas enteras pollo formato ahorro XXL EROSKI, bandeja aprox. 950 g",
+      "url": "https://www.capraboacasa.com/es/productdetail/19230572-pechugas-enteras-pollo-formato-ahorro-xxl-eroski-bandeja-aprox-950-g/",
+      "priceCents": 589,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 950,
+        "kind": "approximate"
+      },
+      "unitPriceCents": 620,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:44.746Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "db1d6d23725ed59b74c850b7277051c49fc4edfc917f0d9c1e6c17f6f32c8f0a"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "19230580",
+      "key": "chicken",
+      "name": "Pechuga de pollo fileteada extrafina EROSKI, bandeja aprox. 450 g",
+      "url": "https://www.capraboacasa.com/es/productdetail/19230580-pechuga-de-pollo-fileteada-extrafina-eroski-bandeja-aprox-450-g/",
+      "priceCents": 324,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 450,
+        "kind": "approximate"
+      },
+      "unitPriceCents": 720,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:45.751Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "57a1555b63faac8a834e7259954cb64345156547733fa1d389dc6d6e9fdbc300"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "10914109",
+      "key": "oats",
+      "name": "Copos de avena D. RADISSON, bolsa 500 g",
+      "url": "https://www.capraboacasa.com/es/productdetail/10914109-copos-de-avena-d-radisson-bolsa-500-g/",
+      "priceCents": 300,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 500,
+        "kind": "fixed"
+      },
+      "unitPriceCents": 600,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:46.691Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "5fb3bfc04d8062466bc90d4557ed68ad3692c49d61d2303c054e3276cf40ac90"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "9160615",
+      "key": "rice",
+      "name": "Arroz basmati EROSKI, paquete 1 kg",
+      "url": "https://www.capraboacasa.com/es/productdetail/9160615-arroz-basmati-eroski-paquete-1-kg/",
+      "priceCents": 210,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 1000,
+        "kind": "fixed"
+      },
+      "unitPriceCents": 210,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:47.657Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "cc23e047f23a28bbda0c76748c2a10a823dd17b6d3eb1fc24b73edadbd15c0ac"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "14382832",
+      "key": "banana",
+      "name": "Banana, al peso, compra mínima 1 kg",
+      "url": "https://www.capraboacasa.com/es/productdetail/14382832-banana-al-peso-compra-minima-1-kg/",
+      "priceCents": 155,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 1000,
+        "kind": "minimum"
+      },
+      "unitPriceCents": 155,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:48.618Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "8052854df6dcf2dfbf8ef8f71bec05fae950851a387d4450b97ffdb5e96d823f"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "23842743",
+      "key": "apple",
+      "name": "Manzana Golden, al peso, compra mínima 1 kg",
+      "url": "https://www.capraboacasa.com/es/productdetail/23842743-manzana-golden-al-peso-compra-minima-1-kg/",
+      "priceCents": 215,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 1000,
+        "kind": "minimum"
+      },
+      "unitPriceCents": 215,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:49.657Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "571427f6cc248d3b2a82a5e5c7ba11c62c6adde2ba76b364f380650a81cee2f9"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "18374611",
+      "key": "avocado",
+      "name": "Aguacate maduro, al peso, compra mínima 500 g",
+      "url": "https://www.capraboacasa.com/es/productdetail/18374611-aguacate-maduro-al-peso-compra-minima-500-g/",
+      "priceCents": 250,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 500,
+        "kind": "minimum"
+      },
+      "unitPriceCents": 500,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:50.628Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "1fb0fabc0b2b2c0ca6f0c21025e3c35f9d934f4ddef0aec4d286948a8e69f495"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "23760622",
+      "key": "orange",
+      "name": "Naranja EROSKI, malla 3 kg",
+      "url": "https://www.capraboacasa.com/es/productdetail/23760622-naranja-eroski-malla-3-kg/",
+      "priceCents": 585,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 3000,
+        "kind": "fixed"
+      },
+      "unitPriceCents": 195,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:51.689Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "442e4531d3d5b3c3ebe8ae712851fee6c60635ac2b9510c90e76d87046d9f8c3"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "11653490",
+      "key": "potato",
+      "name": "Patata PATNATUR, bolsa 3 kg",
+      "url": "https://www.capraboacasa.com/es/productdetail/11653490-patata-patnatur-bolsa-3-kg/",
+      "priceCents": 499,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 3000,
+        "kind": "fixed"
+      },
+      "unitPriceCents": 166,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:52.630Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "5970a5eb3aa8119aeac6e7dfee7768f5645e300c7c8f6f583539f86a52be0923"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "1934785",
+      "key": "onion",
+      "name": "Cebolla blanca Buti EROSKI, malla 1 kg",
+      "url": "https://www.capraboacasa.com/es/productdetail/1934785-cebolla-blanca-buti-eroski-malla-1-kg/",
+      "priceCents": 169,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 1000,
+        "kind": "fixed"
+      },
+      "unitPriceCents": 169,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:53.611Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "34a49135156c303a355c37a14c0245c721f60f00da75eb776bd16e4658ddc59f"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "9195637",
+      "key": "broccoli",
+      "name": "Brócóli, pieza 500 g",
+      "url": "https://www.capraboacasa.com/es/productdetail/9195637-brocoli-pieza-500-g/",
+      "priceCents": 289,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 500,
+        "kind": "fixed"
+      },
+      "unitPriceCents": 578,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:54.579Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "ded84bfe26f0eea12460003b6192939959d57f468f6a10cdab594fc50167aa1d"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "26794008",
+      "key": "pepper",
+      "name": "Pimiento lamuyo rojo, al peso, compra mínima 500 g",
+      "url": "https://www.capraboacasa.com/es/productdetail/26794008-pimiento-lamuyo-rojo-al-peso-compra-minima-500-g/",
+      "priceCents": 198,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 500,
+        "kind": "minimum"
+      },
+      "unitPriceCents": 396,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:55.531Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "d1f3be7653d113c2b3ebb99859880f89849f3c36eaa382977c551b9ef308568f"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "26201855",
+      "key": "garlic",
+      "name": "Ajo, malla 250 g",
+      "url": "https://www.capraboacasa.com/es/productdetail/26201855-ajo-malla-250-g/",
+      "priceCents": 229,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 250,
+        "kind": "fixed"
+      },
+      "unitPriceCents": 916,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:56.468Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "dfbd94058cb98a184bac2d627492793f9781d13b1e82e2a34e89fa4547738caa"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "62216",
+      "key": "tomato",
+      "name": "Tomate en rama, al peso, compra mínima 600 g",
+      "url": "https://www.capraboacasa.com/es/productdetail/62216-tomate-en-rama-al-peso-compra-minima-600-g/",
+      "priceCents": 225,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 600,
+        "kind": "minimum"
+      },
+      "unitPriceCents": 375,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:57.443Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "25b339198a7ff7b4f649502f4a914f643a6600ffbe3e2a80e69a861e7d53e262"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "179481",
+      "key": "sweetPotato",
+      "name": "Boniato, al peso, compra mínima 1 kg",
+      "url": "https://www.capraboacasa.com/es/productdetail/179481-boniato-al-peso-compra-minima-1-kg/",
+      "priceCents": 285,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 1000,
+        "kind": "minimum"
+      },
+      "unitPriceCents": 285,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:58.544Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "90eda2876332a7581429cb6d0c9f25570bf9c46cb2cdd6932397aa3b758f166a"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "4501508",
+      "key": "carrot",
+      "name": "Zanahoria EROSKI, bolsa 1 kg",
+      "url": "https://www.capraboacasa.com/es/productdetail/4501508-zanahoria-eroski-bolsa-1-kg/",
+      "priceCents": 120,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 1000,
+        "kind": "fixed"
+      },
+      "unitPriceCents": 120,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:59.527Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "ae385a3387e056762c91614f3d9ee67aab5e710f92444d735fd265d91b5b0841"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "19548627",
+      "key": "eggs",
+      "name": "Huevo fresco M suelo Cataluña EROSKI, cartón 1 docena",
+      "url": "https://www.capraboacasa.com/es/productdetail/19548627-huevo-fresco-m-suelo-cataluna-eroski-carton-1-docena/",
+      "priceCents": 285,
+      "currency": "EUR",
+      "pack": {
+        "unit": "unit",
+        "quantity": 12,
+        "kind": "fixed"
+      },
+      "unitPriceCents": null,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:38:00.481Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "ebebe51d7cdc8413cbc3cba1394895fdba4d16dadc83cb36f01f1f21274fdd20"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "371658",
+      "key": "oliveOil",
+      "name": "Aceite de oliva virgen extra EROSKI, botella 1 litro",
+      "url": "https://www.capraboacasa.com/es/productdetail/371658-aceite-de-oliva-virgen-extra-eroski-botella-1-litro/",
+      "priceCents": 445,
+      "currency": "EUR",
+      "pack": {
+        "unit": "ml",
+        "quantity": 1000,
+        "kind": "fixed"
+      },
+      "unitPriceCents": 445,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:38:01.419Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "f403832b82eaf112aa9a6da0b4deb92f7e1dfaf6d8af7b6b48544253b354c155"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "25946740",
+      "key": "chickpeaDry",
+      "name": "Garbanzo extra EROSKI, paquete 500 g",
+      "url": "https://www.capraboacasa.com/es/productdetail/25946740-garbanzo-extra-eroski-paquete-500-g/",
+      "priceCents": 110,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 500,
+        "kind": "fixed"
+      },
+      "unitPriceCents": 220,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:38:02.461Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "788ce9292aee008c59af66223c694bdb71c5d1ac8203699a0707dae1972cae59"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "25948381",
+      "key": "lentilDry",
+      "name": "Lenteja pardina EROSKI, paquete 1 kg",
+      "url": "https://www.capraboacasa.com/es/productdetail/25948381-lenteja-pardina-eroski-paquete-1-kg/",
+      "priceCents": 185,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 1000,
+        "kind": "fixed"
+      },
+      "unitPriceCents": 185,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:38:03.487Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "b044f147fcd393e201266f52dce3b6c74469477fc336cc1ba5ed0d11499b41bc"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "25946732",
+      "key": "whiteBeanDry",
+      "name": "Alubia blanca larga EROSKI, paquete 500 g",
+      "url": "https://www.capraboacasa.com/es/productdetail/25946732-alubia-blanca-larga-eroski-paquete-500-g/",
+      "priceCents": 125,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 500,
+        "kind": "fixed"
+      },
+      "unitPriceCents": 250,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:38:04.457Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "8005fbb6570c99ea06a6fc6122724616b1e7987e8240f1095adce891c15923cb"
+      }
+    },
+    {
+      "storeId": "caprabo",
+      "id": "22316962",
+      "key": "proteinDairy",
+      "name": "Natural YOPRO, pack 2x160 g",
+      "url": "https://www.capraboacasa.com/es/productdetail/22316962-natural-yopro-pack-2x160-g/",
+      "priceCents": 299,
+      "currency": "EUR",
+      "pack": {
+        "unit": "g",
+        "quantity": 320,
+        "kind": "fixed"
+      },
+      "unitPriceCents": 938,
+      "availability": "in_stock",
+      "observedAt": "2026-10-01T09:37:16.907Z",
+      "context": {
+        "postalCode": null,
+        "storeId": "8284",
+        "scope": "public_unlocalized"
+      },
+      "source": {
+        "method": "html_structured_data",
+        "sha256": "13ab2e76c92f15fa27894d2b51e664ccf9aad7fadba66b94965baed991ee88e1"
+      }
+    }
+  ]
+}
